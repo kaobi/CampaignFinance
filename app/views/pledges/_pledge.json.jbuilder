@@ -1,0 +1,2 @@
+json.extract! pledge, :id, :report_id, :transaction_id, :entity_id, :entity_type_id, :travel_id, :candidate_id, :date, :out_of_state_pac, :pac_id, :amount, :description, :date_created, :pledge_total, :created_at, :updated_at
+json.url pledge_url(pledge, format: :json)

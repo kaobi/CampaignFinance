@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @loan.report_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @loan.transaction_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @loan.entity_id %>
+</p>
+
+<p>
+  <strong>Entity type:</strong>
+  <%= @loan.entity_type_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @loan.candidate_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @loan.date %>
+</p>
+
+<p>
+  <strong>Out of state pac:</strong>
+  <%= @loan.out_of_state_pac %>
+</p>
+
+<p>
+  <strong>Pac:</strong>
+  <%= @loan.pac_id %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @loan.amount %>
+</p>
+
+<p>
+  <strong>Interest rate:</strong>
+  <%= @loan.interest_rate %>
+</p>
+
+<p>
+  <strong>Maturity date:</strong>
+  <%= @loan.maturity_date %>
+</p>
+
+<p>
+  <strong>Collateral description:</strong>
+  <%= @loan.collateral_description %>
+</p>
+
+<p>
+  <strong>Personal fund:</strong>
+  <%= @loan.personal_fund %>
+</p>
+
+<p>
+  <strong>Amount guaranteed:</strong>
+  <%= @loan.amount_guaranteed %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @loan.date_created %>
+</p>
+
+<p>
+  <strong>Loan total:</strong>
+  <%= @loan.loan_total %>
+</p>
+
+<%= link_to 'Edit', edit_loan_path(@loan) %> |
+<%= link_to 'Back', loans_path %>

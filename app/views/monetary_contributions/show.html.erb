@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @monetary_contribution.report_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @monetary_contribution.entity_id %>
+</p>
+
+<p>
+  <strong>Entity type:</strong>
+  <%= @monetary_contribution.entity_type_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @monetary_contribution.transaction_id %>
+</p>
+
+<p>
+  <strong>Candiate:</strong>
+  <%= @monetary_contribution.candiate_id %>
+</p>
+
+<p>
+  <strong>Pac:</strong>
+  <%= @monetary_contribution.pac_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @monetary_contribution.date %>
+</p>
+
+<p>
+  <strong>Out of state pac:</strong>
+  <%= @monetary_contribution.out_of_state_pac %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @monetary_contribution.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @monetary_contribution.description %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @monetary_contribution.date_created %>
+</p>
+
+<p>
+  <strong>Mc total:</strong>
+  <%= @monetary_contribution.mc_total %>
+</p>
+
+<%= link_to 'Edit', edit_monetary_contribution_path(@monetary_contribution) %> |
+<%= link_to 'Back', monetary_contributions_path %>

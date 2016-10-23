@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pledges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Transaction</th>
+      <th>Entity</th>
+      <th>Entity type</th>
+      <th>Travel</th>
+      <th>Candidate</th>
+      <th>Date</th>
+      <th>Out of state pac</th>
+      <th>Pac</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Date created</th>
+      <th>Pledge total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pledges.each do |pledge| %>
+      <tr>
+        <td><%= pledge.report_id %></td>
+        <td><%= pledge.transaction_id %></td>
+        <td><%= pledge.entity_id %></td>
+        <td><%= pledge.entity_type_id %></td>
+        <td><%= pledge.travel_id %></td>
+        <td><%= pledge.candidate_id %></td>
+        <td><%= pledge.date %></td>
+        <td><%= pledge.out_of_state_pac %></td>
+        <td><%= pledge.pac_id %></td>
+        <td><%= pledge.amount %></td>
+        <td><%= pledge.description %></td>
+        <td><%= pledge.date_created %></td>
+        <td><%= pledge.pledge_total %></td>
+        <td><%= link_to 'Show', pledge %></td>
+        <td><%= link_to 'Edit', edit_pledge_path(pledge) %></td>
+        <td><%= link_to 'Destroy', pledge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pledge', new_pledge_path %>

@@ -1,0 +1,2 @@
+json.extract! expenditure, :id, :report_id, :entity_id, :entity_type_id, :transaction_id, :expenditure_type_id, :payment_method_id, :travel_id, :candidate_id, :purpose, :date, :amount, :category, :date_created, :living_expense, :reimbursement, :expenditure_total, :created_at, :updated_at
+json.url expenditure_url(expenditure, format: :json)

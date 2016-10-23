@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @credit.report_id %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @credit.transaction_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @credit.entity_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @credit.candidate_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @credit.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @credit.amount %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @credit.reason %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @credit.date_created %>
+</p>
+
+<p>
+  <strong>Return:</strong>
+  <%= @credit.return %>
+</p>
+
+<p>
+  <strong>Credit total:</strong>
+  <%= @credit.credit_total %>
+</p>
+
+<%= link_to 'Edit', edit_credit_path(@credit) %> |
+<%= link_to 'Back', credits_path %>

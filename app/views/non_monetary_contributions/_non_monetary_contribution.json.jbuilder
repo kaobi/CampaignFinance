@@ -1,0 +1,2 @@
+json.extract! non_monetary_contribution, :id, :report_id, :transaction_id, :entity_id, :entity_type_id, :travel_id, :candidate_id, :date, :out_of_state_pac, :pac_id, :amount, :description, :date_created, :nmc_total, :created_at, :updated_at
+json.url non_monetary_contribution_url(non_monetary_contribution, format: :json)

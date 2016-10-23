@@ -1,0 +1,2 @@
+json.extract! treasurer, :id, :address_type_id, :state_id, :prefix, :first_name, :mi, :alias, :last_name, :suffix, :change_address, :address, :suite, :city, :zip_code, :phone, :extension, :created_at, :updated_at
+json.url treasurer_url(treasurer, format: :json)

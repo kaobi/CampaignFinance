@@ -1,0 +1,69 @@
+<%= form_for(@pledge) do |f| %>
+  <% if @pledge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pledge.errors.count, "error") %> prohibited this pledge from being saved:</h2>
+
+      <ul>
+      <% @pledge.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_id %><br>
+    <%= f.number_field :transaction_id %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_id %><br>
+    <%= f.number_field :entity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_type_id %><br>
+    <%= f.number_field :entity_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :travel_id %><br>
+    <%= f.number_field :travel_id %>
+  </div>
+  <div class="field">
+    <%= f.label :candidate_id %><br>
+    <%= f.number_field :candidate_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :out_of_state_pac %><br>
+    <%= f.check_box :out_of_state_pac %>
+  </div>
+  <div class="field">
+    <%= f.label :pac_id %><br>
+    <%= f.number_field :pac_id %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :date_created %><br>
+    <%= f.date_select :date_created %>
+  </div>
+  <div class="field">
+    <%= f.label :pledge_total %><br>
+    <%= f.text_field :pledge_total %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

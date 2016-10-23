@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Loans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Transaction</th>
+      <th>Entity</th>
+      <th>Entity type</th>
+      <th>Candidate</th>
+      <th>Date</th>
+      <th>Out of state pac</th>
+      <th>Pac</th>
+      <th>Amount</th>
+      <th>Interest rate</th>
+      <th>Maturity date</th>
+      <th>Collateral description</th>
+      <th>Personal fund</th>
+      <th>Amount guaranteed</th>
+      <th>Date created</th>
+      <th>Loan total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loans.each do |loan| %>
+      <tr>
+        <td><%= loan.report_id %></td>
+        <td><%= loan.transaction_id %></td>
+        <td><%= loan.entity_id %></td>
+        <td><%= loan.entity_type_id %></td>
+        <td><%= loan.candidate_id %></td>
+        <td><%= loan.date %></td>
+        <td><%= loan.out_of_state_pac %></td>
+        <td><%= loan.pac_id %></td>
+        <td><%= loan.amount %></td>
+        <td><%= loan.interest_rate %></td>
+        <td><%= loan.maturity_date %></td>
+        <td><%= loan.collateral_description %></td>
+        <td><%= loan.personal_fund %></td>
+        <td><%= loan.amount_guaranteed %></td>
+        <td><%= loan.date_created %></td>
+        <td><%= loan.loan_total %></td>
+        <td><%= link_to 'Show', loan %></td>
+        <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
+        <td><%= link_to 'Destroy', loan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loan', new_loan_path %>

@@ -1,0 +1,2 @@
+json.extract! cover_sheet, :id, :report_id, :candidate_id, :treasurer_id, :election_type_id, :officeheld_id, :offices_sought_id, :period_begin, :period_end, :election_date, :created_date, :created_at, :updated_at
+json.url cover_sheet_url(cover_sheet, format: :json)

@@ -1,0 +1,2 @@
+json.extract! loan, :id, :report_id, :transaction_id, :entity_id, :entity_type_id, :candidate_id, :date, :out_of_state_pac, :pac_id, :amount, :interest_rate, :maturity_date, :collateral_description, :personal_fund, :amount_guaranteed, :date_created, :loan_total, :created_at, :updated_at
+json.url loan_url(loan, format: :json)

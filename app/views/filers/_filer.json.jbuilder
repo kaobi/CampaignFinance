@@ -1,0 +1,2 @@
+json.extract! filer, :id, :user_account_id, :filer_type_id, :state_id, :office_held_id, :office_sought_id, :first_name, :mi, :last_name, :committee, :address, :secondary_address, :suite, :city, :zip_code, :phone, :extension, :email, :hand_deliver, :receive_date, :postmark, :active, :date_created, :created_at, :updated_at
+json.url filer_url(filer, format: :json)

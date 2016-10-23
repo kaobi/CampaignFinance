@@ -1,0 +1,2 @@
+json.extract! report, :id, :filer_id, :report_type_id, :submit_date, :file_name, :origin, :campaign_year, :upload_type, :on_time, :validity, :signature, :created_at, :updated_at
+json.url report_url(report, format: :json)

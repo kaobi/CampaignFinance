@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_account_id: 1
+  filer_type_id: 1
+  state_id: 1
+  office_held_id: 1
+  office_sought_id: 1
+  first_name: MyString
+  mi: MyString
+  last_name: MyString
+  committee: MyString
+  address: MyString
+  secondary_address: MyString
+  suite: 1
+  city: MyString
+  zip_code: 1
+  phone: MyString
+  extension: 1
+  email: MyString
+  hand_deliver: 2016-10-22
+  receive_date: 2016-10-22
+  postmark: false
+  active: false
+  date_created: 2016-10-22
+
+two:
+  user_account_id: 1
+  filer_type_id: 1
+  state_id: 1
+  office_held_id: 1
+  office_sought_id: 1
+  first_name: MyString
+  mi: MyString
+  last_name: MyString
+  committee: MyString
+  address: MyString
+  secondary_address: MyString
+  suite: 1
+  city: MyString
+  zip_code: 1
+  phone: MyString
+  extension: 1
+  email: MyString
+  hand_deliver: 2016-10-22
+  receive_date: 2016-10-22
+  postmark: false
+  active: false
+  date_created: 2016-10-22

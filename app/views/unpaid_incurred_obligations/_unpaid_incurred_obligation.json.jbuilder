@@ -1,0 +1,2 @@
+json.extract! unpaid_incurred_obligation, :id, :report_id, :entity_id, :entity_type_id, :transaction_id, :category_id, :candidate_id, :travel_id, :expenditure_type_id, :description, :date, :amount, :date_created, :ul_obligation_total, :created_at, :updated_at
+json.url unpaid_incurred_obligation_url(unpaid_incurred_obligation, format: :json)

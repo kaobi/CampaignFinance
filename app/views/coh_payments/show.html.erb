@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Report:</strong>
+  <%= @coh_payment.report_id %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @coh_payment.entity_id %>
+</p>
+
+<p>
+  <strong>Entity type:</strong>
+  <%= @coh_payment.entity_type_id %>
+</p>
+
+<p>
+  <strong>Expenditure category type:</strong>
+  <%= @coh_payment.expenditure_category_type_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @coh_payment.candidate_id %>
+</p>
+
+<p>
+  <strong>Travel:</strong>
+  <%= @coh_payment.travel_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @coh_payment.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @coh_payment.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @coh_payment.description %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @coh_payment.date_created %>
+</p>
+
+<p>
+  <strong>Coh payment total:</strong>
+  <%= @coh_payment.coh_payment_total %>
+</p>
+
+<%= link_to 'Edit', edit_coh_payment_path(@coh_payment) %> |
+<%= link_to 'Back', coh_payments_path %>

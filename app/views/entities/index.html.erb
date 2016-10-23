@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Entities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entity type</th>
+      <th>Prefix</th>
+      <th>State</th>
+      <th>First name</th>
+      <th>Mi</th>
+      <th>Last name</th>
+      <th>Suffix</th>
+      <th>Address</th>
+      <th>Secondary address</th>
+      <th>Suite</th>
+      <th>City</th>
+      <th>Zip code</th>
+      <th>Occupation org</th>
+      <th>Company</th>
+      <th>Date created</th>
+      <th>Change address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entities.each do |entity| %>
+      <tr>
+        <td><%= entity.entity_type_id %></td>
+        <td><%= entity.prefix_id %></td>
+        <td><%= entity.state_id %></td>
+        <td><%= entity.first_name %></td>
+        <td><%= entity.mi %></td>
+        <td><%= entity.last_name %></td>
+        <td><%= entity.suffix %></td>
+        <td><%= entity.address %></td>
+        <td><%= entity.secondary_address %></td>
+        <td><%= entity.suite %></td>
+        <td><%= entity.city %></td>
+        <td><%= entity.zip_code %></td>
+        <td><%= entity.occupation_org %></td>
+        <td><%= entity.company %></td>
+        <td><%= entity.date_created %></td>
+        <td><%= entity.change_address %></td>
+        <td><%= link_to 'Show', entity %></td>
+        <td><%= link_to 'Edit', edit_entity_path(entity) %></td>
+        <td><%= link_to 'Destroy', entity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entity', new_entity_path %>

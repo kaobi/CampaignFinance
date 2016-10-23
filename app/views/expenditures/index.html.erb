@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Expenditures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Entity</th>
+      <th>Entity type</th>
+      <th>Transaction</th>
+      <th>Expenditure type</th>
+      <th>Payment method</th>
+      <th>Travel</th>
+      <th>Candidate</th>
+      <th>Purpose</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Category</th>
+      <th>Date created</th>
+      <th>Living expense</th>
+      <th>Reimbursement</th>
+      <th>Expenditure total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expenditures.each do |expenditure| %>
+      <tr>
+        <td><%= expenditure.report_id %></td>
+        <td><%= expenditure.entity_id %></td>
+        <td><%= expenditure.entity_type_id %></td>
+        <td><%= expenditure.transaction_id %></td>
+        <td><%= expenditure.expenditure_type_id %></td>
+        <td><%= expenditure.payment_method_id %></td>
+        <td><%= expenditure.travel_id %></td>
+        <td><%= expenditure.candidate_id %></td>
+        <td><%= expenditure.purpose %></td>
+        <td><%= expenditure.date %></td>
+        <td><%= expenditure.amount %></td>
+        <td><%= expenditure.category %></td>
+        <td><%= expenditure.date_created %></td>
+        <td><%= expenditure.living_expense %></td>
+        <td><%= expenditure.reimbursement %></td>
+        <td><%= expenditure.expenditure_total %></td>
+        <td><%= link_to 'Show', expenditure %></td>
+        <td><%= link_to 'Edit', edit_expenditure_path(expenditure) %></td>
+        <td><%= link_to 'Destroy', expenditure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expenditure', new_expenditure_path %>

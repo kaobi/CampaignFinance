@@ -1,0 +1,81 @@
+<%= form_for(@entity) do |f| %>
+  <% if @entity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+
+      <ul>
+      <% @entity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :entity_type_id %><br>
+    <%= f.number_field :entity_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :prefix_id %><br>
+    <%= f.number_field :prefix_id %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br>
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :mi %><br>
+    <%= f.text_field :mi %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :suffix %><br>
+    <%= f.text_field :suffix %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :secondary_address %><br>
+    <%= f.text_field :secondary_address %>
+  </div>
+  <div class="field">
+    <%= f.label :suite %><br>
+    <%= f.number_field :suite %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code %><br>
+    <%= f.number_field :zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation_org %><br>
+    <%= f.text_field :occupation_org %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :date_created %><br>
+    <%= f.date_select :date_created %>
+  </div>
+  <div class="field">
+    <%= f.label :change_address %><br>
+    <%= f.check_box :change_address %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

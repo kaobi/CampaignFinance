@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cover Sheets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>Candidate</th>
+      <th>Treasurer</th>
+      <th>Election type</th>
+      <th>Officeheld</th>
+      <th>Offices sought</th>
+      <th>Period begin</th>
+      <th>Period end</th>
+      <th>Election date</th>
+      <th>Created date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cover_sheets.each do |cover_sheet| %>
+      <tr>
+        <td><%= cover_sheet.report_id %></td>
+        <td><%= cover_sheet.candidate_id %></td>
+        <td><%= cover_sheet.treasurer_id %></td>
+        <td><%= cover_sheet.election_type_id %></td>
+        <td><%= cover_sheet.officeheld_id %></td>
+        <td><%= cover_sheet.offices_sought_id %></td>
+        <td><%= cover_sheet.period_begin %></td>
+        <td><%= cover_sheet.period_end %></td>
+        <td><%= cover_sheet.election_date %></td>
+        <td><%= cover_sheet.created_date %></td>
+        <td><%= link_to 'Show', cover_sheet %></td>
+        <td><%= link_to 'Edit', edit_cover_sheet_path(cover_sheet) %></td>
+        <td><%= link_to 'Destroy', cover_sheet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cover sheet', new_cover_sheet_path %>

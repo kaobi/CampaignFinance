@@ -1,0 +1,2 @@
+json.extract! monetary_contribution, :id, :report_id, :entity_id, :entity_type_id, :transaction_id, :candiate_id, :pac_id, :date, :out_of_state_pac, :amount, :description, :date_created, :mc_total, :created_at, :updated_at
+json.url monetary_contribution_url(monetary_contribution, format: :json)

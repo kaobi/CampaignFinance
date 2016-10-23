@@ -1,0 +1,2 @@
+json.extract! report_subtotal, :id, :report_id, :monetary_contribution_id, :non_monetary_contribution_id, :pledge_id, :loan_id, :expenditure_id, :unpaid_incurred_obligation_id, :investment_purchase_id, :credit_id, :coh_payment_id, :date_created, :created_at, :updated_at
+json.url report_subtotal_url(report_subtotal, format: :json)

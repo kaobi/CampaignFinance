@@ -1,0 +1,57 @@
+<%= form_for(@cover_sheet) do |f| %>
+  <% if @cover_sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cover_sheet.errors.count, "error") %> prohibited this cover_sheet from being saved:</h2>
+
+      <ul>
+      <% @cover_sheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_id %><br>
+    <%= f.number_field :report_id %>
+  </div>
+  <div class="field">
+    <%= f.label :candidate_id %><br>
+    <%= f.number_field :candidate_id %>
+  </div>
+  <div class="field">
+    <%= f.label :treasurer_id %><br>
+    <%= f.number_field :treasurer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :election_type_id %><br>
+    <%= f.number_field :election_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :officeheld_id %><br>
+    <%= f.number_field :officeheld_id %>
+  </div>
+  <div class="field">
+    <%= f.label :offices_sought_id %><br>
+    <%= f.number_field :offices_sought_id %>
+  </div>
+  <div class="field">
+    <%= f.label :period_begin %><br>
+    <%= f.date_select :period_begin %>
+  </div>
+  <div class="field">
+    <%= f.label :period_end %><br>
+    <%= f.date_select :period_end %>
+  </div>
+  <div class="field">
+    <%= f.label :election_date %><br>
+    <%= f.date_select :election_date %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br>
+    <%= f.date_select :created_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

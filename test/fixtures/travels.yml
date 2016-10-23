@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_id: 1
+  entity_id: 1
+  candidate_id: 1
+  date: 2016-10-23
+  purpose: MyString
+  travel_begin: 2016-10-23
+  travel_end: 2016-10-23
+  transportation: MyString
+  location: MyString
+  date_created: 2016-10-23
+
+two:
+  report_id: 1
+  entity_id: 1
+  candidate_id: 1
+  date: 2016-10-23
+  purpose: MyString
+  travel_begin: 2016-10-23
+  travel_end: 2016-10-23
+  transportation: MyString
+  location: MyString
+  date_created: 2016-10-23

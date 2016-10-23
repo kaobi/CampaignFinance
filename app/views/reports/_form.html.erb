@@ -1,0 +1,57 @@
+<%= form_for(@report) do |f| %>
+  <% if @report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+      <% @report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :filer_id %><br>
+    <%= f.number_field :filer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :report_type_id %><br>
+    <%= f.number_field :report_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :submit_date %><br>
+    <%= f.date_select :submit_date %>
+  </div>
+  <div class="field">
+    <%= f.label :file_name %><br>
+    <%= f.text_field :file_name %>
+  </div>
+  <div class="field">
+    <%= f.label :origin %><br>
+    <%= f.text_field :origin %>
+  </div>
+  <div class="field">
+    <%= f.label :campaign_year %><br>
+    <%= f.date_select :campaign_year %>
+  </div>
+  <div class="field">
+    <%= f.label :upload_type %><br>
+    <%= f.text_field :upload_type %>
+  </div>
+  <div class="field">
+    <%= f.label :on_time %><br>
+    <%= f.check_box :on_time %>
+  </div>
+  <div class="field">
+    <%= f.label :validity %><br>
+    <%= f.check_box :validity %>
+  </div>
+  <div class="field">
+    <%= f.label :signature %><br>
+    <%= f.text_field :signature %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

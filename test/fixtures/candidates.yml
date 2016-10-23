@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  state_id: 1
+  prefix_id: 1
+  first_name: MyString
+  mi: MyString
+  alias: MyString
+  last_name: MyString
+  suffix: MyString
+  change_address: false
+  address: MyString
+  appt_suite_num: 1
+  city: MyString
+  zip_code: 1
+  phone: MyString
+  extension: 1
+
+two:
+  state_id: 1
+  prefix_id: 1
+  first_name: MyString
+  mi: MyString
+  alias: MyString
+  last_name: MyString
+  suffix: MyString
+  change_address: false
+  address: MyString
+  appt_suite_num: 1
+  city: MyString
+  zip_code: 1
+  phone: MyString
+  extension: 1
